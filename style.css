@@ -1,0 +1,99 @@
+/* Design System & Variables */
+:root {
+    --primary: #f2ca50;
+    --primary-container: #d4af37;
+    --on-primary: #3c2f00;
+    --on-primary-container: #554300;
+    --secondary: #c8c6c5;
+    --secondary-container: #4a4949;
+    --surface: #16130b;
+    --surface-variant: #38342b;
+    --on-surface: #eae1d4;
+    --on-surface-variant: #d0c5af;
+    --background: #16130b;
+    --error: #ffb4ab;
+    --outline: #99907c;
+    
+    /* Spacing */
+    --section-lg: 120px;
+    --section-md: 100px;
+    --section-sm: 80px;
+    --element-gap: 24px;
+    --stack-md: 16px;
+    --stack-sm: 8px;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--on-surface);
+    font-family: 'Lexend', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .font-space {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Utilities */
+.glass-card {
+    background: rgba(17, 14, 7, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.gold-glow:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    transform: translateY(-4px);
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Scroll Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-container);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+/* Selection */
+::selection {
+    background: var(--primary-container);
+    color: var(--on-primary-container);
+}

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>GOLD FITNESS | Elite Discipline. Proven Results.</title>
+    <meta name="description" content="Join Rajapalayam's top-rated premium fitness club. Experience bespoke training programs in a sanctuary designed for excellence.">
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind for Layout (keeping it as per reference for speed and responsiveness) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2ca50",
+                        "primary-container": "#d4af37",
+                        "on-primary": "#3c2f00",
+                        "on-primary-container": "#554300",
+                        "surface": "#16130b",
+                        "background": "#16130b",
+                        "on-surface": "#eae1d4",
+                        "on-surface-variant": "#d0c5af",
+                        "surface-container-low": "#1f1b13",
+                        "surface-container-highest": "#38342b",
+                    },
+                    fontFamily: {
+                        "h1": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"],
+                        "hero": ["Space Grotesk"],
+                        "body": ["Lexend"]
+                    }
+                },
+            },
+        }
+    </script>
+    
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+
+    <!-- TopNavBar -->
+    <nav class="bg-black/80 backdrop-blur-xl fixed top-0 w-full z-50 border-b border-white/10 shadow-[0_0_20px_rgba(212,175,55,0.1)]">
+        <div class="flex justify-between items-center px-8 py-5 max-w-[1200px] mx-auto">
+            <div class="text-2xl font-black text-primary tracking-widest font-h1 uppercase">
+                GOLD FITNESS
+            </div>
+            <div class="hidden md:flex gap-8 items-center font-h1 tracking-tighter uppercase font-bold">
+                <a class="text-primary border-b-2 border-primary pb-1" href="#programs">Programs</a>
+                <a class="text-white/70 hover:text-white transition-all duration-300 hover:scale-105 hover:text-primary" href="#about">About</a>
+                <a class="text-white/70 hover:text-white transition-all duration-300 hover:scale-105 hover:text-primary" href="#gallery">Gallery</a>
+                <a class="text-white/70 hover:text-white transition-all duration-300 hover:scale-105 hover:text-primary" href="#contact">Contact</a>
+            </div>
+            <button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-bold uppercase tracking-widest text-sm hover:scale-105 hover:shadow-[0_0_15px_rgba(212,175,55,0.5)] transition-all active:scale-95 duration-150">
+                Join Now
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img alt="Elite gym environment" class="w-full h-full object-cover grayscale opacity-60" src="assets/mainphoto1.jpeg"/>
+            <div class="absolute inset-0 hero-gradient"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent opacity-90"></div>
+        </div>
+        <div class="relative z-10 max-w-[1200px] w-full px-8">
+            <div class="max-w-3xl">
+                <h1 class="font-hero text-5xl md:text-7xl text-primary mb-6 leading-tight">
+                    Train Smart.<br/>Build Real Strength.
+                </h1>
+                <p class="text-lg md:text-xl text-on-surface-variant mb-10 max-w-xl">
+                    Join Rajapalayam’s top-rated premium fitness club. Experience bespoke training programs in a sanctuary designed for those who demand excellence.
+                </p>
+                <div class="flex flex-wrap gap-6">
+                    <button class="bg-primary-container text-on-primary-container font-bold px-10 py-5 rounded-lg gold-glow transition-all duration-300 flex items-center gap-2 uppercase tracking-widest">
+                        JOIN NOW
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </button>
+                    <button class="border border-primary text-primary font-bold px-10 py-5 rounded-lg hover:bg-primary/10 transition-all uppercase tracking-widest">
+                        FREE TRIAL
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar -->
+    <section class="relative z-20 -mt-16 max-w-[1200px] mx-auto px-8 reveal">
+        <div class="glass-card grid grid-cols-2 md:grid-cols-4 gap-8 p-10 rounded-xl">
+            <div class="text-center">
+                <span class="material-symbols-outlined text-primary text-4xl mb-2">star</span>
+                <h3 class="text-3xl font-bold text-white">5.0</h3>
+                <p class="text-on-surface-variant text-xs font-bold tracking-widest uppercase">GOOGLE RATING</p>
+            </div>
+            <div class="text-center">
+                <span class="material-symbols-outlined text-primary text-4xl mb-2">fitness_center</span>
+                <h3 class="text-3xl font-bold text-white">15+</h3>
+                <p class="text-on-surface-variant text-xs font-bold tracking-widest uppercase">EXPERT TRAINERS</p>
+            </div>
+            <div class="text-center">
+                <span class="material-symbols-outlined text-primary text-4xl mb-2">precision_manufacturing</span>
+                <h3 class="text-3xl font-bold text-white">MODERN</h3>
+                <p class="text-on-surface-variant text-xs font-bold tracking-widest uppercase">EQUIPMENT</p>
+            </div>
+            <div class="text-center">
+                <span class="material-symbols-outlined text-primary text-4xl mb-2">trending_up</span>
+                <h3 class="text-3xl font-bold text-white">REAL</h3>
+                <p class="text-on-surface-variant text-xs font-bold tracking-widest uppercase">RESULTS FOCUS</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 max-w-[1200px] mx-auto px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2 relative reveal">
+                <div class="absolute -inset-4 border border-primary/20 rounded-xl"></div>
+                <img alt="Athlete training" class="rounded-xl w-full h-[500px] object-cover relative z-10" src="assets/mainphoto2.jpeg"/>
+            </div>
+            <div class="w-full lg:w-1/2 reveal">
+                <span class="text-primary text-sm font-bold tracking-widest mb-4 block uppercase">OUR PHILOSOPHY</span>
+                <h2 class="text-4xl md:text-5xl font-h2 text-on-surface mb-6 uppercase tracking-tight leading-tight">Elite Discipline.<br/>Proven Results.</h2>
+                <p class="text-lg text-on-surface-variant mb-8">
+                    At GOLD FITNESS, we believe that fitness is the ultimate luxury. Our methodology combines scientific training protocols with an environment that inspires relentless progress.
+                </p>
+                <ul class="space-y-4 mb-10">
+                    <li class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary bg-primary/10 p-1 rounded-full">check</span>
+                        <span class="text-on-surface">Personalized biometric assessment and tracking.</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary bg-primary/10 p-1 rounded-full">check</span>
+                        <span class="text-on-surface">Olympic-grade strength and conditioning zones.</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <span class="material-symbols-outlined text-primary bg-primary/10 p-1 rounded-full">check</span>
+                        <span class="text-on-surface">Integrated nutritional guidance and recovery plans.</span>
+                    </li>
+                </ul>
+                <button class="border-b-2 border-primary text-primary font-bold py-2 hover:text-white transition-colors uppercase tracking-widest">
+                    LEARN MORE ABOUT OUR METHODS
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="programs" class="bg-surface-container-low py-24">
+        <div class="max-w-[1200px] mx-auto px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-h2 text-white mb-4 uppercase tracking-widest">Elite Programs</h2>
+                <div class="h-1 w-24 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="glass-card p-10 rounded-xl gold-glow transition-all duration-300 reveal">
+                    <div class="w-12 h-12 bg-primary/20 flex items-center justify-center rounded-lg mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">fitness_center</span>
+                    </div>
+                    <h3 class="text-2xl font-h2 text-white mb-4">STRENGTH TRAINING</h3>
+                    <p class="text-on-surface-variant mb-6">Master fundamental movements and build raw power using professional equipment.</p>
+                    <div class="h-0.5 w-full bg-primary/10 mb-6">
+                        <div class="h-full bg-gradient-to-r from-primary to-transparent w-3/4"></div>
+                    </div>
+                </div>
+                <!-- Program 2 -->
+                <div class="glass-card p-10 rounded-xl gold-glow transition-all duration-300 reveal">
+                    <div class="w-12 h-12 bg-primary/20 flex items-center justify-center rounded-lg mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">bolt</span>
+                    </div>
+                    <h3 class="text-2xl font-h2 text-white mb-4">HIIT CIRCUIT</h3>
+                    <p class="text-on-surface-variant mb-6">High-intensity intervals designed to maximize caloric burn and athletic endurance.</p>
+                    <div class="h-0.5 w-full bg-primary/10 mb-6">
+                        <div class="h-full bg-gradient-to-r from-primary to-transparent w-1/2"></div>
+                    </div>
+                </div>
+                <!-- Program 3 -->
+                <div class="glass-card p-10 rounded-xl gold-glow transition-all duration-300 reveal">
+                    <div class="w-12 h-12 bg-primary/20 flex items-center justify-center rounded-lg mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">monitoring</span>
+                    </div>
+                    <h3 class="text-2xl font-h2 text-white mb-4">WEIGHT LOSS</h3>
+                    <p class="text-on-surface-variant mb-6">Comprehensive programs combining movement and nutrition for sustainable fat loss.</p>
+                    <div class="h-0.5 w-full bg-primary/10 mb-6">
+                        <div class="h-full bg-gradient-to-r from-primary to-transparent w-2/3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 max-w-[1200px] mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+            <div class="md:col-span-2 overflow-hidden rounded-xl relative group reveal">
+                <img alt="Gym floor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/mainphoto3.jpeg"/>
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="text-white text-sm font-bold tracking-widest uppercase">MODERN EQUIPMENT</span>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-xl relative group reveal">
+                <img alt="Free weights" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/dumbbells.png"/>
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="text-white text-sm font-bold tracking-widest uppercase">STRENGTH ZONE</span>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-xl relative group reveal">
+                <img alt="Yoga space" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="assets/yoga_studio.png"/>
+                <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span class="text-white text-sm font-bold tracking-widest uppercase">RECOVERY STUDIO</span>
+                </div>
+            </div>
+            <div class="md:col-span-2 overflow-hidden rounded-xl relative group reveal">
+                <div class="w-full h-full bg-surface-container-highest flex flex-col items-center justify-center p-12 text-center border border-primary/20">
+                    <h3 class="text-4xl font-h2 text-primary mb-4 uppercase">MORE THAN A GYM</h3>
+                    <p class="text-on-surface-variant text-lg">A sanctuary for discipline and a hub for those who aspire to greatness in every aspect of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 max-w-[1200px] mx-auto px-8">
+        <div class="flex flex-col lg:flex-row gap-16">
+            <div class="w-full lg:w-1/2 reveal">
+                <h2 class="text-4xl md:text-5xl font-h2 text-white mb-8 uppercase">VISIT THE CLUB</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start gap-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+                        <div>
+                            <h4 class="font-bold text-white text-xl mb-2 uppercase">ADDRESS</h4>
+                            <p class="text-on-surface-variant">Hari Krishna Complex,<br/>Tenkasi Road, Rajapalayam,<br/>Tamil Nadu - 626117</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+                        <div>
+                            <h4 class="font-bold text-white text-xl mb-2 uppercase">HOURS</h4>
+                            <p class="text-on-surface-variant">Mon - Sat: 05:00 AM - 10:00 PM<br/>Sun: 06:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">call</span>
+                        <div>
+                            <h4 class="font-bold text-white text-xl mb-2 uppercase">CONTACT</h4>
+                            <p class="text-on-surface-variant">+91 98765 43210<br/>info@goldfitness.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 reveal">
+                <div class="glass-card p-10 rounded-xl">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-primary text-xs font-bold tracking-widest mb-2 uppercase">FULL NAME</label>
+                            <input class="w-full bg-surface-container-highest border-b border-white/20 focus:border-primary focus:ring-0 text-white p-4 transition-all" placeholder="John Doe" type="text" required/>
+                        </div>
+                        <div>
+                            <label class="block text-primary text-xs font-bold tracking-widest mb-2 uppercase">EMAIL ADDRESS</label>
+                            <input class="w-full bg-surface-container-highest border-b border-white/20 focus:border-primary focus:ring-0 text-white p-4 transition-all" placeholder="john@example.com" type="email" required/>
+                        </div>
+                        <div>
+                            <label class="block text-primary text-xs font-bold tracking-widest mb-2 uppercase">INTERESTED PROGRAM</label>
+                            <select class="w-full bg-surface-container-highest border-b border-white/20 focus:border-primary focus:ring-0 text-white p-4 transition-all appearance-none">
+                                <option>Strength Training</option>
+                                <option>HIIT & Cardio</option>
+                                <option>Personal Coaching</option>
+                                <option>Weight Loss</option>
+                            </select>
+                        </div>
+                        <button class="w-full bg-primary-container text-on-primary-container font-bold py-5 rounded-lg hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] transition-all uppercase tracking-widest" type="submit">
+                            REQUEST CALLBACK
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black w-full py-20 border-t border-white/10">
+        <div class="max-w-[1200px] mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div>
+                <div class="text-xl font-bold text-white mb-6 tracking-widest">GOLD FITNESS</div>
+                <p class="text-gray-500 mb-8">The premier destination for high-performance fitness in Rajapalayam. Join our elite community and redefine your limits.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 border border-white/10 flex items-center justify-center hover:border-primary text-gray-500 hover:text-primary transition-all">
+                        <span class="material-symbols-outlined text-sm">share</span>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <p class="text-white font-bold mb-4 uppercase tracking-widest text-xs">EXPLORE</p>
+                    <a class="block text-gray-500 hover:text-primary transition-colors text-sm" href="#programs">Programs</a>
+                    <a class="block text-gray-500 hover:text-primary transition-colors text-sm" href="#about">About</a>
+                    <a class="block text-gray-500 hover:text-primary transition-colors text-sm" href="#gallery">Gallery</a>
+                </div>
+                <div class="space-y-4">
+                    <p class="text-white font-bold mb-4 uppercase tracking-widest text-xs">LEGAL</p>
+                    <a class="block text-gray-500 hover:text-primary transition-colors text-sm" href="#">Privacy</a>
+                    <a class="block text-gray-500 hover:text-primary transition-colors text-sm" href="#">Terms</a>
+                </div>
+            </div>
+            <div class="text-gray-500 md:text-right">
+                <p class="text-sm mb-4">© 2024 GOLD FITNESS. ELITE DISCIPLINE.</p>
+                <p class="text-xs opacity-40">Handcrafted for those who pursue excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Local JS -->
+    <script src="script.js"></script>
+</body>
+</html>
